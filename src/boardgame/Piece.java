@@ -1,6 +1,7 @@
 package boardgame;
 
 public class Piece {
+	//Peça
 	
 	protected Position position;
 	private Board board;

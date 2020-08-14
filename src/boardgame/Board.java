@@ -2,6 +2,8 @@ package boardgame;
 
 public class Board {
 	
+	//Tabuleiro
+	
 	private int rows;
 	private int columms;
 	private Piece [] [] pieces;
@@ -27,6 +29,16 @@ public class Board {
 	public void setColumms(int columms) {
 		this.columms = columms;
 	}
+	
+	public Piece piece (int row, int column) {
+		return pieces [row] [column];
+	}
+	
+	public Piece piece (Position position) {
+		return pieces [position.getrow()] [position.getcolumn()];
+	}
+	
+	
 	
 	
 	
